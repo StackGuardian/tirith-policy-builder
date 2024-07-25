@@ -1,0 +1,998 @@
+{
+    "aws_api_gateway_rest_api": {},
+    "aws_api_gateway_stage": {},
+    "aws_apigatewayv2_api": {},
+    "aws_appautoscaling_target": {},
+    "aws_backup_vault": {
+        "notes": "aws_backup_vault AWS Storage Gateway Volume Backup prices could not be found in the AWS pricing data."
+    },
+    "aws_acmpca_certificate_authority": {},
+    "aws_acm_certificate": {},
+    "aws_cloudformation_stack": {},
+    "aws_cloudformation_stack_set": {},
+    "aws_cloudfront_distribution": {},
+    "aws_cloudtrail": {},
+    "aws_cloudwatch_dashboard": {},
+    "aws_cloudwatch_log_group": {},
+    "aws_cloudwatch_metric_alarm": {},
+    "aws_codebuild_project": {},
+    "aws_config_config_rule": {},
+    "aws_config_configuration_recorder": {},
+    "aws_config_organization_custom_rule": {},
+    "aws_config_organization_managed_rule": {},
+    "aws_dms_replication_instance": {},
+    "aws_dx_gateway_association": {},
+    "aws_dx_connection": {},
+    "aws_directory_service_directory": {},
+    "aws_docdb_cluster": {},
+    "aws_docdb_cluster_instance": {},
+    "aws_docdb_cluster_snapshot": {},
+    "aws_dynamodb_table": {
+        "notes": "DAX is not yet supported."
+    },
+    "aws_instance": {},
+    "aws_ebs_volume": {},
+    "aws_ebs_snapshot": {},
+    "aws_ebs_snapshot_copy": {},
+    "aws_autoscaling_group": {},
+    "aws_eip": {},
+    "aws_ec2_host": {},
+    "aws_ecr_repository": {},
+    "aws_ecs_service": {},
+    "aws_efs_file_system": {},
+    "aws_alb": {},
+    "aws_lb": {},
+    "aws_elb": {},
+    "aws_eks_cluster": {},
+    "aws_eks_fargate_profile": {},
+    "aws_eks_node_group": {},
+    "aws_elasticache_cluster": {},
+    "aws_elasticache_replication_group": {},
+    "aws_elasticsearch_domain": {},
+    "aws_elastic_beanstalk_environment": {},
+    "aws_cloudwatch_event_bus": {},
+    "aws_fsx_openzfs_file_system": {},
+    "aws_fsx_windows_file_system": {
+        "notes": "Data deduplication is not supported by Terraform."
+    },
+    "aws_globalaccelerator_accelerator": {},
+    "aws_globalaccelerator_endpoint_group": {},
+    "aws_glue_catalog_database": {},
+    "aws_glue_crawler": {},
+    "aws_glue_job": {},
+    "aws_kms_external_key": {},
+    "aws_kms_key": {},
+    "aws_kinesis_analytics_application": {
+        "notes": "Terraform doesn’t currently support Analytics Studio, but when it does they will require 2 orchestration KPUs."
+    },
+    "aws_kinesisanalyticsv2_application": {
+        "notes": "Terraform doesn’t currently support Analytics Studio, but when it does they will require 2 orchestration KPUs."
+    },
+    "aws_kinesisanalyticsv2_application_snapshot": {
+        "notes": "Terraform doesn’t currently support Analytics Studio, but when it does they will require 2 orchestration KPUs."
+    },
+    "aws_api_gateway_restaws_kinesis_firehose_delivery_stream_api": {
+        "notes": "Terraform doesn’t currently support Analytics Studio, but when it does they will require 2 orchestration KPUs."
+    },
+    "aws_lambda_function": {
+        "notes": "Provisioned concurrency is not yet supported."
+    },
+    "aws_lightsail_instance": {},
+    "aws_mwaa_environment": {},
+    "aws_mq_broker": {},
+    "aws_neptune_cluster": {},
+    "aws_neptune_cluster_instance": {},
+    "aws_neptune_cluster_snapshot": {},
+    "aws_networkfirewall_firewall": {},
+    "aws_redshift_cluster": {},
+    "aws_rds_cluster": {},
+    "aws_db_instance": {},
+    "aws_rds_cluster_instance": {},
+    "aws_route53_record": {},
+    "aws_route53_zone": {},
+    "aws_route53_resolver_endpoint": {},
+    "aws_route53_health_check": {},
+    "aws_secretsmanager_secret": {},
+    "sns_topic": {},
+    "sns_topic_subscription": {},
+    "aws_sqs_queue": {
+        "notes": "Most expensive price tier is used."
+    },
+    "aws_s3_bucket": {
+        "notes": "Most expensive price tier is used. S3 replication time control data transfer, and batch operations are not supported by Terraform."
+    },
+    "aws_s3_bucket_analytics_configuration": {
+        "notes": "Most expensive price tier is used. S3 replication time control data transfer, and batch operations are not supported by Terraform."
+    },
+    "aws_s3_bucket_lifecycle_configuration": {
+        "notes": "Most expensive price tier is used. S3 replication time control data transfer, and batch operations are not supported by Terraform."
+    },
+    "aws_s3_bucket_inventory": {
+        "notes": "Most expensive price tier is used. S3 replication time control data transfer, and batch operations are not supported by Terraform."
+    },
+    "aws_ssm_parameter": {},
+    "aws_ssm_activation": {},
+    "aws_sfn_state_machine": {},
+    "aws_transfer_server": {},
+    "aws_ec2_client_vpn_endpoint, , , , , , , , ": {},
+    "aws_ec2_client_vpn_network_association": {},
+    "aws_ec2_traffic_mirror_session": {},
+    "aws_ec2_transit_gateway_peering_attachment": {},
+    "aws_ec2_transit_vpc_attachment": {},
+    "aws_nat_gateway": {},
+    "aws_vpc_connection": {},
+    "aws_vpc_endpoint": {},
+    "aws_vpn_connection": {},
+    "aws_waf_web_acl": {},
+    "aws_wafv2_web_acl": {},
+    "aws_acm_certificate_validation": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_alb_listener_certificate": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_alb_listener_rule": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_alb_listener": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_alb_target_group_attachment": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_alb_target_group": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_api_gateway_account": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_api_gateway_api_key": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_api_gateway_authorizer": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_api_gateway_base_path_mapping": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_api_gateway_client_certificate": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_api_gateway_deployment": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_api_gateway_documentation_part": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_api_gateway_documentation_version": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_api_gateway_domain_name": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_api_gateway_integration": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_api_gateway_method_response": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_api_gateway_method_settings": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_api_gateway_method": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_api_gateway_model": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_api_gateway_request_validator": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_api_gateway_resource": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_api_gateway_response": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_api_gateway_usage_plan_key": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_api_gateway_usage_plan": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_api_gateway_vpc_link": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_apigatewayv2_api_mapping": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_apigatewayv2_authorizer": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_apigatewayv2_deployment": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_apigatewayv2_domain_name": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_apigatewayv2_integration_response": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_apigatewayv2_integration": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_apigatewayv2_model": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_apigatewayv2_route_response": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_apigatewayv2_route": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_apigatewayv2_stage": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_apigatewayv2_vpc_link": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_appautoscaling_policy": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_appautoscaling_scheduled_action": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_app_cookie_stickiness_policy": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_backup_global_settings": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_backup_plan": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_backup_region_settings": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_backup_selection": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_backup_vault_notifications": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_backup_vault_policy": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_cloudformation_stack_set_instance": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_cloudformation_type": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_cloudfront_origin_access_identity": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_cloudfront_public_key": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_cloudwatch_event_permission": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_cloudwatch_event_rule": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_cloudwatch_event_target": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_cloudwatch_log_destination_policy": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_cloudwatch_log_destination": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_cloudwatch_log_metric_filter": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_cloudwatch_log_resource_policy": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_cloudwatch_log_stream": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_cloudwatch_log_subscription_filter": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_codebuild_report_group": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_codebuild_source_credential": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_codebuild_webhook": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_config_aggregate_authorization": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_config_configuration_aggregator": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_config_configuration_recorder_status": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_config_delivery_channel": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_config_remediation_configuration": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_customer_gateway": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_db_instance_role_association": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_db_option_group": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_db_parameter_group": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_db_subnet_group": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_default_network_acl": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_default_route_table": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_default_security_group": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_default_subnet": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_default_vpc_dhcp_options": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_default_vpc": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_dms_replication_subnet_group": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_dms_replication_task": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_docdb_cluster_parameter_group": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_docdb_subnet_group": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_dx_bgp_peer": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_dx_gateway_association_proposal": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_dx_gateway": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_dx_hosted_private_virtual_interface_accepter": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_dx_hosted_private_virtual_interface": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_dx_hosted_public_virtual_interface_accepter": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_dx_hosted_public_virtual_interface": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_dx_hosted_transit_virtual_interface_accepter": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_dx_hosted_transit_virtual_interface": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_dx_lag": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_dx_private_virtual_interface": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_dx_public_virtual_interface": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_dx_transit_virtual_interface": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_dynamodb_table_item": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_ebs_default_kms_key": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_ebs_encryption_by_default": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_ec2_client_vpn_authorization_rule": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_ec2_client_vpn_route": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_ec2_tag": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_ec2_traffic_mirror_filter_rule": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_ec2_traffic_mirror_filter": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_ec2_traffic_mirror_target": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_ec2_transit_gateway_peering_attachment_accepter": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_ec2_transit_gateway_route_table_association": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_ec2_transit_gateway_route_table_propagation": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_ec2_transit_gateway_route_table": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_ec2_transit_gateway_route": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_ec2_transit_gateway_vpc_attachment_accepter": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_ec2_transit_gateway": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_ecr_lifecycle_policy": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_ecr_repository_policy": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_ecs_account_setting_default": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_ecs_capacity_provider": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_ecs_cluster": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_ecs_task_definition": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_egress_only_internet_gateway": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_efs_access_point": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_efs_file_system_policy": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_efs_mount_target": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_eip_association": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_elasticache_parameter_group": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_elasticache_security_group": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_elasticache_subnet_group": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_elasticsearch_domain_policy": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_elastic_beanstalk_application": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_elb_attachment": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_flow_log": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_glue_catalog_table": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_glue_classifier": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_glue_connection": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_glue_data_catalog_encryption_settings": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_glue_partition": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_glue_partition_index": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_glue_registry": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_glue_resource_policy": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_glue_schema": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_glue_security_configuration": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_glue_trigger": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_glue_user_defined_function": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_glue_workflow": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_iam_access_key": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_iam_account_alias": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_iam_account_password_policy": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_iam_group_membership": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_iam_group_policy_attachment": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_iam_group_policy": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_iam_group": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_iam_instance_profile": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_iam_openid_connect_provider": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_iam_policy_attachment": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_iam_policy": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_iam_role_policy_attachment": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_iam_role_policy": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_iam_role": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_iam_saml_provider": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_iam_server_certificate": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_iam_service_linked_role": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_iam_user_group_membership": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_iam_user_login_profile": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_iam_user_policy_attachment": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_iam_user_policy": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_iam_user_ssh_key": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_iam_user": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_internet_gateway": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_iot_policy": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_key_pair": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_kms_alias": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_kms_ciphertext": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_kms_grant": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_lambda_alias": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_lambda_code_signing_config": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_lambda_event_source_mapping": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_lambda_function_event_invoke_config": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_lambda_layer_version": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_lambda_layer_version_permission": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_lambda_permission": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_launch_configuration": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_launch_template": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_lb_cookie_stickiness_policy": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_lb_listener_certificate": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_lb_listener_rule": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_lb_listener": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_lb_ssl_negotiation_policy": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_lb_target_group_attachment": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_lb_target_group": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_lightsail_domain": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_lightsail_key_pair": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_lightsail_static_ip_attachment": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_lightsail_static_ip": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_load_balancer_backend_server_policy": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_load_balancer_listener_policy": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_load_balancer_policy": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_main_route_table_association": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_mq_configuration": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_msk_configuration": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_neptune_cluster_parameter_group": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_neptune_event_subscription": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_neptune_parameter_group": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_neptune_subnet_group": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_network_acl_rule": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_network_acl": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_network_interface_attachment": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_network_interface_sg_attachment": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_network_interface": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_networkfirewall_rule_group": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_networkfirewall_firewall_policy": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_networkfirewall_logging_configuration": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_ram_principal_association": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_ram_resource_association": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_ram_resource_share_accepter": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_ram_resource_share": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_rds_cluster_endpoint": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_rds_cluster_parameter_group": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_resourcegroups_group": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_route53_resolver_dnssec_config": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_route53_resolver_query_log_config_association": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_route53_resolver_query_log_config": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_route53_resolver_rule_association": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_route53_resolver_rule": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_route53_zone_association": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_route_table_association": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_route_table": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_route": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_s3_access_point": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_s3_account_public_access_block": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_s3_acl": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_s3_bucket_metric": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_s3_bucket_notification": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_s3_bucket_object (costs are shown at the bucket level)": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_s3_bucket_ownership_controls": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_s3_bucket_policy": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_s3_bucket_public_access_block": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_secretsmanager_secret_policy": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_secretsmanager_secret_rotation": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_secretsmanager_secret_version": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_security_group_rule": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_security_group": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_service_discovery_service": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_ses_domain_dkim": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_ses_domain_identity": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_sns_platform_application": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_sns_sms_preferences": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_sns_topic_policy": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_sqs_queue_policy": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_ssm_association": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_ssm_maintenance_window_target": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_ssm_maintenance_window_task": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_ssm_maintenance_window": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_ssm_patch_baseline": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_ssm_patch_group": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_ssm_resource_data_sync": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_subnet": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_transfer_access": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_transfer_ssh_key": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_transfer_user": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_volume_attachment": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_vpc_dhcp_options_association": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_vpc_dhcp_options": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_vpc_endpoint_connection_notification": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_vpc_endpoint_route_table_association": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_vpc_endpoint_service_allowed_principal": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_vpc_endpoint_service": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_vpc_endpoint_subnet_association": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_vpc_ipv4_cidr_block_association": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_vpc_peering_connection_accepter": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_vpc_peering_connection_options": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_vpc_peering_connection": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_vpc": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_vpn_connection_route": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_vpn_gateway_attachment": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_vpn_gateway_route_propagation": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_vpn_gateway": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_waf_byte_match_set": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_waf_geo_match_set": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_waf_ipset": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_waf_rate_based_rule": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_waf_regex_match_set": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_waf_regex_pattern_set": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_waf_rule_group": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_waf_rule": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_waf_size_constraint_set": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_waf_sql_injection_match_set": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_waf_xss_match_set": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_wafv2_ip_set": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_wafv2_regex_pattern_set": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_wafv2_rule_group": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_wafv2_web_acl_association": {
+        "notes": "resources that Infracost supports, and classify as free."
+    },
+    "aws_wafv2_web_acl_logging_configuration": {
+        "notes": "resources that Infracost supports, and classify as free."
+    }
+}
