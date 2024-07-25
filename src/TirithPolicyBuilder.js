@@ -832,7 +832,7 @@ const TirithPolicyBuilder = props => {
                   </Link>
                 </Box>
               </div>
-              <div>
+              <div style={{ paddingTop: "10px", paddingBottom: "10px" }}>
                 <Button
                   onClick={() => {
                     setIsShowPolicyJSON(true)
@@ -842,7 +842,7 @@ const TirithPolicyBuilder = props => {
                 </Button>
               </div>
             </Box>
-            <SpaceBetween direction="vertical" size="s">
+            <SpaceBetween direction="vertical" size="m">
               {shouldEnterPolicyName && (
                 <FormField
                   // description="This is a description."
